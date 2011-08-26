@@ -30,6 +30,7 @@ blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }
 ins { background-color: #ff9; color: #000; text-decoration: none; }
 mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+em { font-style: italic; }
 del { text-decoration: line-through; }
 abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
 table { border-collapse: collapse; border-spacing: 0; }
@@ -87,43 +88,59 @@ a:hover { color: #036; }
 */
 
 
-
+body {
+  background: #e4e4e4;
+}
 header {
-  margin: 0 auto;
+  margin: 12px auto 0;
   width: 800px;
 /*  padding-bottom: 256px;*/
   padding: 0;
 }
 
+
+/*h2 {   margin-left: -8px; }*/
+
 h1 {
+  margin-left: -5px;
   font-size: 52px;
+/*  text-align: center;*/
 /*  letter-spacing: 1px;*/
 }
 
 h1 span {
   background: #444;
   color: white;
-  padding: 5px 3px 1px 5px;
+  padding: 5px 5px 1px 7px;
   font-size: 20px;
   position: relative;
   top: -6px;
-  margin: 0 4px;
+  margin: 0 2px;
   left: -1px;
+}
+
+h1 em {
+  padding-right: 3px;
 }
 
 h2 {
   text-align: center;
   font-size: 24px;
-  margin-top: 16px;
+  line-height: 1.7em;
+/*  margin-top: 16px;*/
   font-weight: normal;
+  width: 810px;
   padding: 0;
+  background: white;
+/*  padding-left: -2px;*/
 }
 
 h3 {
-  position: absolute;
-  bottom: -12px; left: 0; right: 0;
+/*  position: absolute;*/
+/*  bottom: -12px; left: 0; right: 0;*/
   text-transform: uppercase;
   color: #aaa;
+  margin-top: 4px;
   font-size: 36px;
   text-align: center;
 }
@@ -142,6 +159,7 @@ section {
 
 header {
 /*  outline: 1px solid green;*/
+/*background: white;*/
 }
 
 div {
@@ -150,21 +168,24 @@ div {
 
 
 #join_list {
-/*  width: 800px;*/
-  margin: 48px auto;
+  width: 680px;
+  margin: 0 auto 0;
   padding: 24px;
+  background: #DBA;
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 1px solid #865;
+  border-top: 0px solid white;
   font-size: 24px;
-  background: orange;
+/*  background: orange;*/
   color: #222;
   line-height: 1.6em;
   position: relative;
 }
 
 #join_list input {
-  display: inline;
+  position: relative;
+  top: -3px;
+/*  display: inline;*/
   font-size: 24px !important;
 }
 
@@ -180,8 +201,9 @@ div {
 
 #main {
   background: #222;
-  padding:0px 0 16px;
-  margin: 32px auto 0;
+  padding:0px 0 20px;
+  margin: 24px auto 0;
+  position: relative;
 }
 
 
@@ -190,12 +212,13 @@ div {
   left: 50%;
   height: 360px;
   margin-left: -400px;
-  top: 124px;  
+  top: 0;  
 }
 
 #click_block img {
-  width: 260px;
-  margin-top: 100px;
+  width: 275px;
+  margin-top: 80px;
+  margin-bottom: 16px;
   box-shadow: 0 1px 3px #000;
 }
 
@@ -217,28 +240,41 @@ div {
   position: absolute;
   left: 50%;
   margin-left: 120px;
-  top: 144px;  
+  top: 0;  
   height: 340px;
 }
 
 #playback_block img {
   margin-top: 104px;
+    margin-bottom: 16px;
   width: 285px;
+}
+
+
+footer {
+  margin-top: 36px;
+  position: relative;
 }
 
 #share {
   position: absolute;
-  top: 12px;
+  top: 2px;
   left: 50%;
-  margin-left: 60px;
+  margin-left: 160px;
+
+
+/*  background: red;*/
   padding: 8px;
 }
 
 #share > * {
+  display: block;
   float: left;
-/*  outline: 1px solid red;*/
 }
 
+iframe {
+
+}
 
 #with_dropbox {
 /*  background: #eee;*/
@@ -247,7 +283,10 @@ div {
 #with_dropbox img {
   width: 100px;
   display: block;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  opacity: .8;
+  margin-left: -360px;
 }
 
 

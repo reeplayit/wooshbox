@@ -260,16 +260,14 @@ footer {
   position: absolute;
   top: 2px;
   left: 50%;
-  margin-left: 160px;
-
-
-/*  background: red;*/
+  margin-left: 36px;
   padding: 8px;
 }
 
 #share > * {
   display: block;
   float: left;
+  outline: 1px solid red;
 }
 
 iframe {

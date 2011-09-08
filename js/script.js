@@ -1,6 +1,6 @@
 $(function(){
 
-  if (window.location.hash == '#added') {
+  if (added) {
     $('body').addClass('subbed');
     $('#main').click(function() {
       window.location.search = '';

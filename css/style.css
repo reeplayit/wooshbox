@@ -303,21 +303,28 @@ footer {
   position: relative;
 }
 
+#about {
+  position: relative;
+  top: 24px;
+  text-align: center;
+}
+
 #share {
   position: absolute;
   top: 2px;
-  left: 50%;
-  margin-left: 72px;
+  right: 0;
+  width: 400px;
   padding: 8px;
 }
 
 #share > * {
   display: block;
   float: left;
+  margin-right: 12px;
 }
 
 iframe {
-
+  float: left;
 }
 
 #with_dropbox {
@@ -330,7 +337,7 @@ iframe {
   position: absolute;
   left: 50%;
   opacity: .8;
-  margin-left: -360px;
+  margin-left: -320px;
 }
 
 

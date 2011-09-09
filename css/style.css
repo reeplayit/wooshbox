@@ -127,17 +127,16 @@ h1 em {
 }
 
 h2 {
-  display: inline;
   text-align: center;
   font-size: 24px;
   line-height: 1.7em;
-/*  margin-top: 12px;*/
   letter-spacing: -1px;
   font-weight: 100;
-/*  width: 760px;*/
+}
+
+h2 span {
   padding: 0 4px;
-  background: white;
-/*  padding-left: -2px;*/
+  background: white;  
 }
 
 h3 {
@@ -240,7 +239,7 @@ form #subscribed img {
   width: 10em;
   text-align: center;
   margin-right: -5em;
-  bottom: -6px;
+  bottom: -36px;
   font-size: 12px;
   color: #666 ;
 }
@@ -248,7 +247,7 @@ form #subscribed img {
 
 #main {
   background: #222;
-  padding:0px 0 20px;
+  padding:0px 0 24px;
   margin: 0 auto 0;
   position: relative;
 }
@@ -264,9 +263,9 @@ form #subscribed img {
 
 #click_block img {
   width: 275px;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 16px;
-  box-shadow: 0 1px 3px #000;
+/*  box-shadow: 0 1px 3px #000;*/
 }
 
 #video_block {
@@ -292,28 +291,27 @@ form #subscribed img {
 }
 
 #playback_block img {
-  margin-top: 104px;
-    margin-bottom: 16px;
+  margin-top: 108px;
+  margin-bottom: 38px;
   width: 285px;
 }
 
 
 footer {
-  margin-top: 36px;
+  margin-top: 42px;
   position: relative;
 }
 
 #about {
   position: relative;
-  top: 18px;
+  top: 72px;
   text-align: center;
 }
 
 #share {
   position: absolute;
   top: 2px;
-  right: 0;
-  width: 400px;
+  left: 780px;
   padding: 8px;
 }
 

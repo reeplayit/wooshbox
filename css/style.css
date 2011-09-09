@@ -230,6 +230,9 @@ form #subscribed img {
 #join_list input {
   position: relative;
   top: -3px;
+}
+
+#join_list input#fjyuhl-fjyuhl {
   font-size: 24px !important;
 }
 
@@ -311,8 +314,11 @@ footer {
 #share {
   position: absolute;
   top: 2px;
-  left: 780px;
+  left: 50%;
+/*  width: 200px;*/
+  margin-left: 150px;
   padding: 8px;
+  width: 230px;
 }
 
 #share > * {
